@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 72px;
+    padding: 1px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    background: rgba(51, 51, 51, 0.08);
+    margin: 0 auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Projects Section */
+.projects {
+    padding: 3rem 5%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always maintain 3 columns */
+    gap: 2rem;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr); /* Enforce 3 columns even on smaller devices */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+}
